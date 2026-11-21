@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEAD ZONE - SURVIVAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+        <header>
+            <h1>DEAD ZONE</h1>
+            <p>SURVIVE THE NIGHT</p>
+        </header>
+
+        <div class="hud">
+            <span>❤️ HP: <b id="health">100</b></span>
+            <span>🔫 AMMO: <b id="ammo">20</b></span>
+            <span>☠️ KILLS: <b id="kills">0</b></span>
+        </div>
+
+        <div class="canvas-wrap">
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+            <div id="overlay">
+                <h2 id="overlayTitle">DEAD ZONE</h2>
+                <p id="overlayText">Are you ready to survive?</p>
+                <button id="startBtn">START SURVIVAL</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="movement">
+                <button data-key="w">▲</button>
+                <div>
+                    <button data-key="a">◀</button>
+                    <button data-key="s">▼</button>
+                    <button data-key="d">▶</button>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="reloadBtn">RELOAD</button>
+                <button id="shootBtn">FIRE 🔫</button>
+            </div>
+        </div>
+
+        <p class="help">PC: WASD to move • Mouse to aim and shoot</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #090d0b;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.game {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e53935;
+    font-size: 38px;
+    letter-spacing: 5px;
+}
+
+header p {
+    color: #8c9690;
+    letter-spacing: 4px;
+    margin-top: 7px;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #18221c;
+    padding: 15px 5px;
+    border: 1px solid #354638;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.hud span {
+    font-size: 14px;
+}
+
+.hud b {
+    color: #80e27e;
+}
+
+.canvas-wrap {
+    position: relative;
+    width: 100%;
+    background: #17231a;
+    border: 2px solid #536653;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    touch-action: none;
+}
+
+#overlay {
+    position: absolute;
+    inset: 0;
+    background: #000b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 15px;
+}
+
+#overlay h2 {
+    color: #ef4444;
+    font-size: 30px;
+}
+
+#overlay p {
+    color: #ddd;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 17px;
+    font-weight: bold;
+    touch-action: none;
+}
+
+#startBtn {
+    background: #d32f2f;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.movement {
+    display: grid;
+    gap: 5px;
+}
+
+.movement > button {
+    width: 48px;
+    justify-self: center;
+}
+
+.movement div {
+    display: flex;
+    gap: 5px;
+}
+
+.movement button {
+    background: #29382d;
+    color: white;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+#reloadBtn {
+    background: #e0a52e;
+}
+
+#shootBtn {
+    background: #d32f2f;
+    color: white;
+}
+
+.help {
+    color: #888;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media (min-width: 650px) {
+    .controls {
+        display: none;
+    }
+}
